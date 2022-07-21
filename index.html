@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
   </head>
-  <body>
+  <body onload="divloader(16)">
     <header>
       <h1>Etch a Sketch!</h1>
     </header>
@@ -20,14 +20,16 @@
           <button>Eraser Mode</button>
           <button>Rainbow Mode</button>
           <button>Clear</button>
-          <p>Some text</p>
+          <p id="slider-text">16 x 16</p>
           <input type="range" id="slider" value="16" min="1" max="64" />
         </aside>
-        <div class="main-canvas"></div>
+        <div id="main-canvas"></div>
       </div>
     </main>
     <footer>
-      <h4>Some footer</h4>
+      <br />
+      <hr />
+      <p>PawnB4</p>
     </footer>
   </body>
 </html>
